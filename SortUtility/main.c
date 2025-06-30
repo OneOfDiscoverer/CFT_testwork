@@ -40,7 +40,7 @@ StatBuffer* LoadDump(char* path) {
 }
 
 HashTable* JoinDump(StatBuffer* firstArray, StatBuffer* secondArray) {
-    HashTable *hashTable = create_hashtable(MAX_IDs);
+    HashTable *hashTable = create_table(MAX_IDs);
     StatBuffer *arrayPointer = firstArray;
     while (1) {
         for(int i = 0; i < arrayPointer->size; i++) {
